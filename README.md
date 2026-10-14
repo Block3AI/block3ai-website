@@ -48,7 +48,19 @@ Open `index.html` directly in a browser or use a local development server such a
 
 The production website is hosted as a static site on Hostinger.
 
-For deployment, upload the following directly into the site's `public_html` directory:
+### GitHub auto-deployment
+
+Connect `https://github.com/Block3AI/block3ai-website` in the **block3ai.com** dashboard under **Advanced → Git**. Select branch **main** and deployment directory **public_html**. This is a static HTML site: no install, build, or start command is required.
+
+Before the first deployment, back up the current hosted files and check for hosting-only files or subdirectories that must be preserved. Use **Connect with GitHub**, authorize only this repository where possible, select it, and deploy. Enable **Auto-deployment** in the Git overview. Setup is complete only when Hostinger reports a successful deployment for the expected commit and the live site shows that change.
+
+For future updates, preview changes locally, commit and push to `main`, then check Hostinger's deployment history and the live website. Check all four pages, mobile navigation, and project links. If an update fails, inspect the deployment log; to roll back code, revert the offending commit and push the revert.
+
+See [Hostinger's Git deployment guide](https://www.hostinger.com/support/1583302-how-to-deploy-a-git-repository-in-hostinger/) for the current dashboard flow. The account connection and deployment status are managed in Hostinger, not by this README.
+
+### Manual deployment fallback
+
+Upload the following directly into the site's `public_html` directory:
 
 - `index.html`
 - `projects.html`
