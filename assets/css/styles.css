@@ -57,6 +57,7 @@ section{padding:88px 0}
 .project.featured{grid-column:span 2;min-height:390px;background:radial-gradient(circle at 85% 15%,rgba(96,165,250,.13),transparent 35%),linear-gradient(145deg,#101b2b,#0a111c)}
 .tags{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
 .tag{font:700 .72rem ui-monospace,monospace;padding:6px 9px;border-radius:999px;border:1px solid #26394e;color:#9eb0c5}
+.project.project-compact{min-height:0;justify-content:flex-start;gap:16px}
 .project-link{font-weight:800;color:#dce7f4}
 .project-link:hover{color:var(--cyan)}
 .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
