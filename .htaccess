@@ -1,0 +1,4 @@
+# Serve the legal pages at their public extensionless URLs (Apache/LiteSpeed).
+RewriteEngine On
+RewriteRule ^privacy-policy/?$ privacy-policy.html [L]
+RewriteRule ^terms-and-conditions/?$ terms-and-conditions.html [L]

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://block3ai.com/sitemap.xml

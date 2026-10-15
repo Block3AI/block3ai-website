@@ -2,7 +2,7 @@
 
 Source repository for the Block3AI developer portfolio website.
 
-Block3AI is a personal development portfolio focused on practical work across artificial intelligence, blockchain, Web3, and software engineering. The website is intentionally lightweight and low-maintenance; ongoing experiments, coding exercises, prototypes, and development notes live in **The Lab** on GitHub.
+Block3AI is a personal development portfolio focused on practical work across artificial intelligence, blockchain, Web3, and Web2 coding projects. The website is intentionally lightweight and low-maintenance; ongoing experiments, coding exercises, prototypes, and development notes live in **The Lab** on GitHub.
 
 ## Website
 
@@ -31,11 +31,17 @@ block3ai-website/
 ├── projects.html
 ├── about.html
 ├── contact.html
+├── privacy-policy.html
+├── terms-and-conditions.html
+├── .htaccess
+├── robots.txt
+├── sitemap.xml
 ├── assets/
 │   ├── css/
 │   │   └── styles.css
 │   └── js/
-│       └── main.js
+│       ├── main.js
+│       └── chat.js
 ├── .gitignore
 └── README.md
 ```
@@ -54,7 +60,7 @@ Connect `https://github.com/Block3AI/block3ai-website` in the **block3ai.com** d
 
 Before the first deployment, back up the current hosted files and check for hosting-only files or subdirectories that must be preserved. Use **Connect with GitHub**, authorize only this repository where possible, select it, and deploy. Enable **Auto-deployment** in the Git overview. Setup is complete only when Hostinger reports a successful deployment for the expected commit and the live site shows that change.
 
-For future updates, preview changes locally, commit and push to `main`, then check Hostinger's deployment history and the live website. Check all four pages, mobile navigation, and project links. If an update fails, inspect the deployment log; to roll back code, revert the offending commit and push the revert.
+For future updates, preview changes locally, commit and push to `main`, then check Hostinger's deployment history and the live website. Check all six pages, mobile navigation, and project links, including `/privacy-policy` and `/terms-and-conditions`. If an update fails, inspect the deployment log; to roll back code, revert the offending commit and push the revert.
 
 See [Hostinger's Git deployment guide](https://www.hostinger.com/support/1583302-how-to-deploy-a-git-repository-in-hostinger/) for the current dashboard flow. The account connection and deployment status are managed in Hostinger, not by this README.
 
@@ -66,9 +72,16 @@ Upload the following directly into the site's `public_html` directory:
 - `projects.html`
 - `about.html`
 - `contact.html`
+- `privacy-policy.html`
+- `terms-and-conditions.html`
+- `.htaccess` (serves the extensionless legal URLs on Apache/LiteSpeed)
+- `robots.txt`
+- `sitemap.xml`
 - `assets/`
 
 `README.md` and `.gitignore` are repository files and do not need to be deployed to `public_html`.
+
+The legal pages use `.htaccess` rewrite rules for their public URLs. A basic local static server may only serve the `.html` files; verify the extensionless URLs on Hostinger after deployment. If hosting already has a `.htaccess` file, merge these two scoped rewrite rules with its existing settings.
 
 ## Development Approach
 
