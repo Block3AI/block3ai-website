@@ -2,7 +2,7 @@
 
 Source repository for the Block3AI developer portfolio website.
 
-Block3AI is a personal development portfolio focused on practical work across artificial intelligence, blockchain, Web3, and Web2 coding projects. The website is intentionally lightweight and low-maintenance; ongoing experiments, coding exercises, prototypes, and development notes live in **The Lab** on GitHub.
+Block3AI is a personal developer portfolio showcasing AI, blockchain, Web3 and Web2 coding projects, with project demos and source code. The website is intentionally lightweight and low-maintenance; ongoing experiments, coding exercises, prototypes, and development notes live in **The Lab** on GitHub.
 
 ## Website
 
